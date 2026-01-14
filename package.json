@@ -1,0 +1,39 @@
+{
+  "name": "todo-list-playwright-tests",
+  "version": "1.0.0",
+  "description": "Automated Testing Suite for To-Do List Website using Playwright",
+  "main": "index.js",
+  "dependencies": {
+    "playwright": "^1.57.0",
+    "playwright-core": "^1.57.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:mobile": "npx playwright test --project='Mobile Chrome' --project='Mobile Safari'",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "test:codegen": "npx playwright codegen https://abhigyank.github.io/To-Do-List/",
+    "test:navigation": "npx playwright test --grep 'Navigation'",
+    "test:add-item": "npx playwright test --grep 'Add Item'",
+    "test:complete": "npx playwright test --grep 'Complete Item'",
+    "test:delete": "npx playwright test --grep 'Delete Item'",
+    "test:edge-cases": "npx playwright test --grep 'Edge Cases'"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "todo-list",
+    "e2e"
+  ],
+  "author": "",
+  "license": "ISC"
+}
