@@ -1,33 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
 
-/**
- * To-Do List Website Automated Test Suite
- * Website: https://abhigyank.github.io/To-Do-List/
- * 
- * Locators Reference:
- * - Input field: #new-task
- * - Add button: #add-item > button
- * - Checkbox: #1, #2, #3... (dynamic, increments per item)
- * - Completed item span: #completed-tasks > li:nth-child(n) > span
- * - Delete button: button.delete#[id]
- * 
- * Note: 
- * - Checkbox disappears after checking (cannot uncheck)
- * - Checkbox ID increments globally
- * 
- * Test Coverage:
- * 1. Navigation Tests - ทดสอบการนำทางระหว่าง tabs
- * 2. Add Item Tests - ทดสอบการเพิ่มรายการใหม่
- * 3. Complete Item Tests - ทดสอบการ mark รายการเป็น completed
- * 4. Delete Item Tests - ทดสอบการลบรายการ
- * 5. UI/UX Tests - ทดสอบส่วนติดต่อผู้ใช้
- * 6. Data Persistence Tests - ทดสอบการเก็บข้อมูล
- * 7. Edge Cases - ทดสอบกรณีพิเศษ
- * 8. Integration Tests - ทดสอบการทำงานร่วมกัน
- * 9. Accessibility Tests - ทดสอบการเข้าถึง
- * 10. Performance Tests - ทดสอบประสิทธิภาพ
- * 11. Specific Locator Tests - ทดสอบ Locators เฉพาะ
- */
 
 // Base URL
 const BASE_URL = 'https://abhigyank.github.io/To-Do-List/';
